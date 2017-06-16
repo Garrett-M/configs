@@ -32,8 +32,9 @@ inoremap {<CR> {<CR>}<C-o>O<tab>
 nnoremap ;<CR> A;<CR>
 nnoremap ;; m`A;<Esc>``
 
-set textwidth=80
-set colorcolumn=+1
+" set textwidth=80
+" set colorcolumn=+1
+set colorcolumn=80
 
 set term=screen-256color
 filetype on
