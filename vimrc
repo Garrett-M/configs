@@ -39,7 +39,9 @@ set colorcolumn=80
 set term=screen-256color
 filetype on
 syntax on
-colorscheme molokai
+" colorscheme molokai
+" let g:molokai_original = 1
+colorscheme murphy
 
 set formatoptions+=r 
 set backspace=2
@@ -55,7 +57,6 @@ set shiftwidth=2
 set autoindent
 set smarttab
 
-let g:molokai_original = 1
 
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
