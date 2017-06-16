@@ -19,7 +19,7 @@ git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # copy zsh stuff
-cp agnoster.zsh-theme ~/.oh-my-zsh-themes/agnoster.zsh-theme
+cp agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme
 cp zshrc ~/.zshrc
 
 # install vim plugins
