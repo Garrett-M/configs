@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Conky
+Exec=/home/garrett/.conky/start_conky.sh
+Terminal=false
+Type=Application
+StartupNotify=false

@@ -4,13 +4,17 @@
 hash vim 2>/dev/null || { echo >&2 "You need vim installed"; exit 1; }
 hash git 2>/dev/null || { echo >&2 "You need git installed"; exit 1; }
 hash zsh 2>/dev/null || { echo >&2 "You need zsh installed"; exit 1; }
+hash pip 2>/dev/null || { echo >&2 "You need pip installed"; exit 1; }
 hash tmux 2>/dev/null || { echo >&2 "You need tmux installed"; exit 1; }
 hash wget 2>/dev/null || { echo >&2 "You need wget installed"; exit 1; }
+hash conky 2>/dev/null || { echo >&2 "You need conky installed"; exit 1; }
 
 # copy stuff to home
 cp bashrc ~/.bashrc
 cp vimrc ~/.vimrc
 cp tmux.conf ~/.tmux.conf
+cp -r conky ~/.conky
+cp conky.desktop ~/.config/autostart/
 
 # tmux themepack  
 git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
@@ -25,4 +29,4 @@ cp zshrc ~/.zshrc
 # install vim plugins
 bash vim-plugin-install.sh
 
-echo "Everything installed. You still have to manually configure your terminal"
+echo "Everything installed. You still have to manually configure your terminal, mess with DE/WM settings, and make sure some dependencies are installed (Python stuff for conky)"
